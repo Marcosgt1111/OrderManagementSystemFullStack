@@ -1,0 +1,48 @@
+﻿# Arquivos de Build e Dependências do .NET
+[Bb]in/
+[Oo]bj/
+*.log
+*.vsix
+.suo
+.user
+.vs/
+.idea/ # Para usuários de JetBrains Rider
+
+# Configurações de Projeto Local
+*.csproj.user
+*.resharper
+*.resharper.user
+
+# Pacotes NuGet
+*.nupkg
+/.nuget/
+packages/
+
+# Variáveis de Ambiente e Segredos (MUITO IMPORTANTE!)
+appsettings.Development.json # Se você colocar informações sensíveis aqui para dev
+appsettings.json # Se você colocar informações sensíveis diretamente aqui (evitar)
+appsettings.*.json # Para garantir que todas as configurações de ambiente não são enviadas
+*.db # Para bancos de dados SQLite locais, se usar (não é o caso do PostgreSQL direto, mas bom ter)
+
+# Pasta de publicações (se gerar publish)
+publish/
+
+# Arquivos de log
+logs/
+*.sqlite
+
+# Arquivos temporários
+*.tmp
+*~
+
+# Outros arquivos específicos do OS
+.DS_Store
+Thumbs.db
+
+# Ignorar a pasta do frontend node_modules (já que ela terá seu próprio .gitignore)
+# Isso é para garantir que a pasta inteira não seja versionada a partir da raiz,
+# mas o .gitignore dentro da pasta 'frontend' já fará isso.
+# frontend/node_modules/
+
+# Arquivos que podem ser gerados pelo VS Code
+.vscode/

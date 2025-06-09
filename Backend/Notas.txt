@@ -1,0 +1,29 @@
+﻿# Notas de Configuração do PostgreSQL Local
+
+Localizei duas port com a mesma entrada a soluçao foi apagar a porta criada manual.
+
+depois fazer o procedimento abaixo.
+
+🧱 Caminho do `postgresql.conf` e `pg_hba.conf`:
+C:\Program Files\PostgreSQL\17\data\
+
+Alteraçoes no txt do software postgre
+🔧 Alterações feitas:
+- `listen_addresses = 'localhost'`
+- `port = 5432`
+- No `pg_hba.conf`, trocado `scram-sha-256` por `md5` nas linhas de acesso local.
+
+📂 Backups salvos:
+- Desktop/postgresql.conf.bkp
+- Desktop/pg_hba.conf.bkp
+
+🔁 Sempre reiniciar o serviço após alterações:
+- `services.msc` > PostgreSQL > Reiniciar
+
+🧪 Teste de porta:
+```powershell
+Test-NetConnection -ComputerName***** localhost -Port 5432
+
+# Usar a ultima versao do swagger nao deu certo
+
+Soluçao disso foi instalar um versao compativel com .net 9 que foi o swagger 7.0
