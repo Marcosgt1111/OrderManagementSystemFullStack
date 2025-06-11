@@ -164,7 +164,6 @@ Atributo [FromBody]: Utilizado em endpoints da API para indicar que os dados do 
 Logging (ILogger): Utiliza o sistema de logging do .NET Core para registrar informações, avisos e erros. O aviso CA2017 foi corrigido para garantir que as mensagens de log correspondam aos parâmetros fornecidos.
 Frontend React
 Requisições HTTP: Faz requisições para os endpoints da API do backend para interagir com os dados dos pedidos.
-Componentização React reutilizáveis, usa rotas para navegação entre páginas, gerenciamento de estado com Context API/Redux/Zustand"].
 Tratamento de Erros: Exibe mensagens de erro amigáveis ao usuário em caso de falha na comunicação com o backend (como o ERR_CONNECTION_REFUSED que foi resolvido).
 Fluxo de um Pedido
 O usuário interage com o frontend para [criar/editar/visualizar] um pedido.
