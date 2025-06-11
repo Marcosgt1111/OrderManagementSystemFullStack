@@ -1,6 +1,6 @@
 # Order Management System - Fullstack
 
-Este é um sistema de gerenciamento de pedidos fullstack, composto por um backend em .NET (ASP.NET Core) e um frontend em [Nome da Tecnologia do Frontend, ex: React, Angular, Vue.js]. O objetivo é demonstrar a comunicação entre as duas camadas e o gerenciamento de pedidos.
+Este é um sistema de gerenciamento de pedidos fullstack, composto por um backend em .NET (ASP.NET Core) e um frontend em ReactJs. O objetivo é demonstrar a comunicação entre as duas camadas e o gerenciamento de pedidos.
 
 ---
 
