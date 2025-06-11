@@ -1,4 +1,4 @@
-# Order Management System - Fullstack
+q# Order Management System - Fullstack
 
 Este é um sistema de gerenciamento de pedidos fullstack, composto por um backend em .NET (ASP.NET Core) e um frontend em ReactJs. O objetivo é demonstrar a comunicação entre as duas camadas e o gerenciamento de pedidos.
 
@@ -180,15 +180,10 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues para repo
 
 **Lembre-se de substituir os seguintes placeholders:**
 
-* `[Nome da Tecnologia do Frontend, ex: React, Angular, Vue.js]`
 * `[Versão do .NET, ex: 9.0]`
-* `[Liste outras bibliotecas ou tecnologias importantes, ex: Entity Framework Core para ORM, Serilog para logging, etc.]`
-* `[Nome da Tecnologia, ex: React]`
-* `[Liste outras bibliotecas ou tecnologias importantes, ex: Axios para requisições HTTP, Redux/Zustand para gerenciamento de estado, Material-UI/Tailwind CSS para UI, etc.]`
+*  Entity Framework Core para ORM, Serilog para logging, etc.]
 * `YOUR_AZURE_SERVICE_BUS_CONNECTION_STRING_HERE` (no `appsettings.json` exemplo)
 * `http://localhost:5010` (no `.env` exemplo, se a porta do seu backend for diferente)
 * Comandos `npm start`, `npm run dev`, `ng serve`, `npm run serve` (ajuste para o seu frontend específico)
-* `[Descreva brevemente como o frontend está estruturado...]`
-* `[Nome da Licença, ex: MIT License]`
 
 Este `README.md` oferece um guia completo para qualquer pessoa que queira entender
