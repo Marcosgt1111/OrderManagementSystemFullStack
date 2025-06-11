@@ -18,12 +18,12 @@ Este é um sistema de gerenciamento de pedidos fullstack, composto por um backen
 * **Linguagem:** C#
 * **Framework:** .NET [Versão do .NET, ex: 9.0] (ASP.NET Core Web API)
 * **Mensageria:** Azure Service Bus (utilizado para processamento assíncrono de pedidos)
-* **Outros:** [Liste outras bibliotecas ou tecnologias importantes, ex: Entity Framework Core para ORM, Serilog para logging, etc.]
+* **Outros: Entity Framework Core para ORM, Serilog para logging, etc.]
 
-### Frontend ([Nome da Tecnologia do Frontend, ex: React])
+### Frontend React
 
 * **Linguagem:** JavaScript / TypeScript
-* **Framework/Biblioteca:** [Nome da Tecnologia, ex: React]
+* **Framework/Biblioteca: React]
 * **Gerenciador de Pacotes:** npm / Yarn
 * **Outros:** [Liste outras bibliotecas ou tecnologias importantes, ex: Axios para requisições HTTP, Redux/Zustand para gerenciamento de estado, Material-UI/Tailwind CSS para UI, etc.]
 
@@ -163,9 +163,9 @@ API RESTful: O backend expõe endpoints RESTful para gerenciar pedidos (criar, l
 Comunicação com Azure Service Bus: O OrderProcessingWorker.cs é um serviço de background que consome mensagens de uma fila do Azure Service Bus. Quando um pedido é criado/atualizado, uma mensagem é enviada para essa fila para processamento assíncrono, garantindo que operações demoradas não bloqueiem a resposta da API.
 Atributo [FromBody]: Utilizado em endpoints da API para indicar que os dados do corpo da requisição HTTP devem ser desserializados para um objeto C#. (Este foi o erro CS0246 resolvido).
 Logging (ILogger): Utiliza o sistema de logging do .NET Core para registrar informações, avisos e erros. O aviso CA2017 foi corrigido para garantir que as mensagens de log correspondam aos parâmetros fornecidos.
-Frontend ([Nome da Tecnologia do Frontend, ex: React])
+Frontend React
 Requisições HTTP: Faz requisições para os endpoints da API do backend para interagir com os dados dos pedidos.
-Componentização: [Descreva brevemente como o frontend está estruturado, ex: "o projeto é construído com componentes React reutilizáveis", "usa rotas para navegação entre páginas", "gerenciamento de estado com Context API/Redux/Zustand"].
+Componentização React reutilizáveis", "usa rotas para navegação entre páginas", "gerenciamento de estado com Context API/Redux/Zustand"].
 Tratamento de Erros: Exibe mensagens de erro amigáveis ao usuário em caso de falha na comunicação com o backend (como o ERR_CONNECTION_REFUSED que foi resolvido).
 Fluxo de um Pedido
 O usuário interage com o frontend para [criar/editar/visualizar] um pedido.
