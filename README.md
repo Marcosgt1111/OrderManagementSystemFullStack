@@ -1,4 +1,4 @@
-q# Order Management System - Fullstack
+# Order Management System - Fullstack
 
 Este é um sistema de gerenciamento de pedidos fullstack, composto por um backend em .NET (ASP.NET Core) e um frontend em ReactJs. O objetivo é demonstrar a comunicação entre as duas camadas e o gerenciamento de pedidos.
 
@@ -16,16 +16,15 @@ Este é um sistema de gerenciamento de pedidos fullstack, composto por um backen
 ### Backend (ASP.NET Core)
 
 * **Linguagem:** C#
-* **Framework:** .NET [Versão do .NET, ex: 9.0] (ASP.NET Core Web API)
+* **Framework:** .NET [Versão.NET 9.0] (ASP.NET Core Web API)
 * **Mensageria:** Azure Service Bus (utilizado para processamento assíncrono de pedidos)
-* **Outros: Entity Framework Core para ORM, Serilog para logging, etc.]
+* **Entity Framework Core para ORM, Serilog para logging, etc.]
 
 ### Frontend React
 
 * **Linguagem:** JavaScript / TypeScript
-* **Framework/Biblioteca: React]
 * **Gerenciador de Pacotes:** npm / Yarn
-* **Outros:** [Liste outras bibliotecas ou tecnologias importantes, ex: Axios para requisições HTTP, Redux/Zustand para gerenciamento de estado, Material-UI/Tailwind CSS para UI, etc.]
+* **Tailwind CSS para UI, etc.
 
 ---
 
