@@ -27,8 +27,14 @@ jobs:
     - id: 'auth'
       uses: 'google-github-actions/auth@v2'
       with:
-        workload_identity_provider: 'projects/SEU_NUMERO_DO_PROJETO/locations/global/workloadIdentityPools/SEU_WIF_POOL/providers/SEU_WIF_PROVIDER' # Substitua pelos seus valores
-        service_account: 'seu-servico-de-conta@SEU_ID_PROJETO.iam.gserviceaccount.com' # Substitua pelo e-mail da sua conta de serviço
+        # **ESTES SÃO OS VALORES CORRIGIDOS E CONFIRMADOS AGORA**
+        # Número do Projeto: 107157443589 (confirmado em image_146877.png)
+        # ID do Pool: marcos (confirmado em image_f66fb8.png)
+        # ID do Provedor: apiorders-github (confirmado em image_f66fb8.png)
+        workload_identity_provider: 'projects/107157443589/locations/global/workloadIdentityPools/marcos/providers/apiorders-github'
+        # E-mail da Conta de Serviço:
+        # Usando a conta de serviço padrão do Compute que você tem (confirmado em image_146877.png e image_13969c.png)
+        service_account: '107157443589-compute@developer.gserviceaccount.com'
 
     # 2. Configura Docker para fazer push para o Artifact Registry
     - name: Set up Docker Buildx
@@ -44,9 +50,8 @@ jobs:
       with:
         context: ./Backend
         file: ./Backend/Dockerfile
-        push: true #TRUE PARA FAZER O PUSH!
+        push: true
         tags: ${{ env.REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.IMAGE_NAME }}:${{ github.run_id }}
-       
 
     # 4. Deploy da Imagem para o Cloud Run
     - name: Deploy to Cloud Run
@@ -56,6 +61,7 @@ jobs:
         region: ${{ env.REGION }}
         project_id: ${{ env.PROJECT_ID }}
         image: ${{ env.REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.IMAGE_NAME }}:${{ github.run_id }}
-      
         flags: '--allow-unauthenticated'
+        
+      
         
