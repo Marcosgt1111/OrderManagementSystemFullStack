@@ -1,4 +1,4 @@
-﻿# Arquivos de Build e Dependências do .NET
+﻿﻿# Arquivos de Build e Dependências do .NET
 [Bb]in/
 [Oo]bj/
 *.log
@@ -21,6 +21,7 @@ packages/
 # Variáveis de Ambiente e Segredos (MUITO IMPORTANTE!)
 appsettings.Development.json # Se você colocar informações sensíveis aqui para dev
 appsettings.json # Se você colocar informações sensíveis diretamente aqui (evitar)
+*.env # Ignorar arquivos de variáveis de ambiente
 appsettings.*.json # Para garantir que todas as configurações de ambiente não são enviadas
 *.db # Para bancos de dados SQLite locais, se usar (não é o caso do PostgreSQL direto, mas bom ter)
 
